@@ -1,0 +1,115 @@
+.company {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  .container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 0;
+  }
+
+  &__text {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 50px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-text);
+    text-align: center;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    padding: 40px;
+    border-radius: 8px;
+
+    span {
+      color: var(--color-accent-second);
+    }
+  }
+
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5%;
+    gap: 40px;
+  }
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: var(--color-text);
+
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    padding: 50px 30px;
+    border-radius: 8px;
+
+    svg {}
+
+
+    strong {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-accent-second);
+    }
+
+    p {
+      font-weight: 400;
+    }
+  }
+
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-text);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--color-accent);
+    }
+  }
+}

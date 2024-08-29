@@ -1,0 +1,57 @@
+.header {
+  padding: 20px 0;
+  box-shadow: 0px 0px 25px rgba(5, 25, 25, 0.08);
+  position: relative;
+  
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    width: 230px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__wa {
+    display: block;
+    width: 50px;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 35px;
+  }
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 16px;
+  }
+
+  &__phones {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+
+}
