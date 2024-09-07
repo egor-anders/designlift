@@ -417,7 +417,7 @@ img {
 }
 @media (max-width: 600px) {
   .hero__wrapper {
-    min-height: 100dvh;
+    min-height: auto;
     padding: 50px 0;
     gap: 30px;
   }
