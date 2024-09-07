@@ -379,7 +379,7 @@ img {
 }
 @media (max-width: 600px) {
   .hero {
-    min-height: 100lvh;
+    min-height: 100dvh;
   }
 }
 .hero .container {
@@ -411,7 +411,7 @@ img {
 }
 @media (max-width: 600px) {
   .hero__wrapper {
-    min-height: 100lvh;
+    min-height: 100dvh;
     padding: 50px 0;
     gap: 30px;
   }
