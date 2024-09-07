@@ -1450,8 +1450,10 @@ img {
      object-fit: cover;
   transition: all 0.4s ease;
 }
-.gallery__item:hover img {
-  scale: 1.1;
+@media (min-width: 1000px) {
+  .gallery__item:hover img {
+    scale: 1.1;
+  }
 }
 @media (max-width: 1290px) {
   .gallery__item {
