@@ -285,7 +285,6 @@ img {
 }
 @media (max-width: 600px) {
   .header__wrapper {
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
   }
@@ -297,6 +296,11 @@ img {
 @media (max-width: 600px) {
   .header__logo {
     width: 150px;
+  }
+}
+@media (max-width: 420px) {
+  .header__logo {
+    width: 120px;
   }
 }
 .header__logo img {
@@ -315,6 +319,11 @@ img {
 @media (max-width: 600px) {
   .header__wa {
     width: 35px;
+  }
+}
+@media (max-width: 420px) {
+  .header__wa {
+    width: 30px;
   }
 }
 .header__contacts {
@@ -355,6 +364,12 @@ img {
     gap: 5px;
   }
 }
+@media (max-width: 420px) {
+  .header__phones {
+    font-size: 12px;
+    gap: 5px;
+  }
+}
 
 .hero {
   background-size: cover;
@@ -364,7 +379,7 @@ img {
 }
 @media (max-width: 600px) {
   .hero {
-    min-height: calc(100vh - 60px);
+    min-height: 100lvh;
   }
 }
 .hero .container {
@@ -396,7 +411,7 @@ img {
 }
 @media (max-width: 600px) {
   .hero__wrapper {
-    min-height: calc(100vh - 60px);
+    min-height: 100lvh;
     padding: 50px 0;
     gap: 30px;
   }
