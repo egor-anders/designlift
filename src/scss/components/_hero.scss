@@ -6,7 +6,8 @@
 
 
   @media (max-width: 600px) {
-    min-height: 100dvh;
+    min-height: auto;
+    background-attachment: unset;
   }
 
   .container {
