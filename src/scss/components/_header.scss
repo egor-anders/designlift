@@ -3,16 +3,30 @@
   box-shadow: 0px 0px 25px rgba(5, 25, 25, 0.08);
   position: relative;
   
+  @media (max-width: 600px) {
+    padding: 10px 0;
+  }
+
 
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+     }
   }
 
   &__logo {
     display: block;
     width: 230px;
+
+    @media (max-width: 600px) {
+      width: 150px;
+    }
 
     img {
       width: 100%;
@@ -30,11 +44,19 @@
     &:hover {
       opacity: 0.5;
     }
+
+    @media (max-width: 600px) {
+      width: 35px;
+     }
   }
 
   &__contacts {
     display: flex;
     gap: 35px;
+    align-items: center;
+    @media (max-width: 600px) {
+      gap: 10px;
+     }
   }
 
 
@@ -43,6 +65,14 @@
     align-items: center;
     gap: 35px;
     font-size: 16px;
+
+    @media (max-width: 1399px) {
+      gap: 25px;
+    }
+
+    @media (max-width: 1290px) {
+     display: none;
+    }
   }
 
   &__phones {
@@ -50,6 +80,12 @@
     gap: 10px;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 600px) {
+     font-size: 14px;
+     gap: 5px;
+    }
+  
   }
 
 

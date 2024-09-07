@@ -9,6 +9,11 @@
   align-items: center;
   border-radius: 8px;
 
+  
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
+
   &__input {
     width: 100%;
     background-color: transparent;
@@ -23,6 +28,16 @@
     &:focus {
       border-color: var(--color-accent);
     }
+
+    @media (max-width: 600px) {
+      transition: none;
+      padding: 15px 10px;
+      font-size: 14px;
+
+      &:focus {
+        border-color: var(--color-text);
+      }
+    }
   }
 
   &__btn {
@@ -33,6 +48,11 @@
     font-size: 18px;
     height: 60px;
     width: 100%;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+      height: 52px;
+    }
   }
 
   &__checkbox {
@@ -50,6 +70,7 @@
       user-select: none;
 
       &::before {
+        flex-shrink: 0;
         content: '';
         width: 24px;
         height: 24px;

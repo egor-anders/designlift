@@ -1,8 +1,20 @@
 .quiz {
   background-color: var(--color-main-light);
   padding: 100px 0;
+
+  @media (max-width: 1290px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 40px 0;
+  }
   &__wrapper {
     padding: 0 5%;
+
+    @media (max-width: 1290px) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -14,6 +26,17 @@
     margin-bottom: 50px;
     border-bottom: 1px solid var(--color-text);
     padding-bottom: 30px;
+
+    @media (max-width: 960px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 24px;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__content {
@@ -27,6 +50,12 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
+    
+    @media (max-width: 600px) {
+      padding: 30px;
+      min-height: 450px;
+    }
   }
 
   &__header {
@@ -34,14 +63,29 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @media (max-width: 960px) {
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
   }
 
   &__subtitle {
     color: var(--color-text);
+
+    @media (max-width: 960px) {
+      font-size: 16px;
+    }
   }
 
   &__counter {
-    color: var(--color-text);
+    color: var(--color-accent-second);
+
+
+    @media (max-width: 960px) {
+      font-size: 16px;
+    }
   }
 
   &__controls {
@@ -56,6 +100,8 @@
 
   &__question {
     color: var(--color-text);
+
+
   }
 
   &__choises {
@@ -85,6 +131,12 @@
     &:focus {
       border-color: var(--color-accent);
     }
+
+    @media (max-width: 960px) {
+      width: 100%;
+      font-size: 16px;
+      padding: 15px;
+    }
     }
 
     label {
@@ -97,6 +149,10 @@
       user-select: none;
       cursor: pointer;
 
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
+
 
       &::before {
         content: '';
@@ -105,6 +161,11 @@
         border: 2px solid #fff;
         border-radius: 50%;
         transition: all 0.3s ease;
+
+        @media (max-width: 960px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
 
@@ -128,6 +189,11 @@
 
     &:disabled {
       opacity: 0.5;
+    }
+
+    @media (max-width: 960px) {
+     font-size: 14px;
+     height: 42px;
     }
   }
 
@@ -160,6 +226,14 @@
     top: 0;
     animation: fade 0.3s ease;
     z-index: 999;
+
+    @media (max-width: 1290px) {
+      font-size: 36px;
+    }
+    
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
 
     &.active {
       display: flex;

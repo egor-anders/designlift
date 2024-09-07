@@ -12,8 +12,21 @@
   border-radius: 8px;
   background-color: var(--color-accent);
 
-  &:hover {
-    color: var(--color-accent);
-    background-color: var(--color-text);
+
+  @media (min-width: 1000px) {
+    &:hover {
+      color: var(--color-accent);
+      background-color: var(--color-text);
+    }
   }
+
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 0 20px;
+    line-height: normal;
+    height: 42px;
+  }
+  
+
 }

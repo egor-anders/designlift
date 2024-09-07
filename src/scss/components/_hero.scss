@@ -4,8 +4,29 @@
   background-attachment: fixed;
   background-position: center;
 
+
+  @media (max-width: 600px) {
+    min-height: calc(100vh - 60px);
+  }
+
   .container {
     height: 100%;
+  }
+
+  &__promotion {
+    font-size: 32px;
+    color: #fff;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    padding: 20px 40px;
+    margin-bottom: -30px;
+
+
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-bottom: 0;
+    }
   }
 
 
@@ -17,7 +38,13 @@
     flex-direction: column;
     gap: 50px;
     padding: 200px 0;
-  min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 95px);
+
+    @media (max-width: 600px) {
+      min-height: calc(100vh - 60px);
+      padding: 50px 0;
+      gap: 30px;
+    }
   }
 
   &__ticker {
@@ -28,6 +55,10 @@
     background-color: rgba($color: #000000, $alpha: 0.2);
     margin-bottom: -30px;
     font-size: 16px;
+
+    @media (max-width: 600px) {
+     padding: 10px 20px;
+    }
   }
 
   &__title {
