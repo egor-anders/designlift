@@ -3,8 +3,7 @@ const next = document.querySelector('.quiz__next');
 const prev = document.querySelector('.quiz__prev');
 const currentNumber = document.querySelector('#current')
 const totalNumber = document.querySelector('#total')
-const form = document.querySelector('.quiz__form')
-const thanks = document.querySelector('.quiz__thanks')
+
 let currentIndex = 0;
 totalNumber.textContent = blocks.length;
 
@@ -37,11 +36,4 @@ prev.addEventListener('click', () => {
 
 
 
-
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  thanks.classList.add('active')
-  form.reset();
-})
 

@@ -113,7 +113,7 @@ img {
 .back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   display: none;
   font-size: 14px;
   color: var(--color-main);
@@ -125,12 +125,13 @@ img {
   transition: all 0.3s ease;
 }
 
-.back-to-top:hover {
-  background: var(--color-accent);
-  text-decoration: none;
-  color: #fff;
+@media (min-width: 1000px) {
+  .back-to-top:hover {
+    background: var(--color-accent);
+    text-decoration: none;
+    color: #fff;
+  }
 }
-
 .title {
   font-weight: 600;
   font-size: 64px;
@@ -666,25 +667,26 @@ img {
   color: var(--color-accent-second);
 }
 .partners__icon {
-  width: 120px;
-  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   flex-shrink: 0;
 }
+.partners__icon img {
+  width: 140px;
+  height: 140px;
+}
 @media (max-width: 960px) {
-  .partners__icon {
-    width: 90px;
-    height: 90px;
+  .partners__icon img {
+    width: 110px;
+    height: 110px;
   }
 }
 @media (max-width: 600px) {
-  .partners__icon {
-    width: 60px;
-    height: 60px;
+  .partners__icon img {
+    width: 80px;
+    height: 80px;
   }
-}
-.partners__icon img {
-  width: 100%;
-  height: 100%;
 }
 @media (max-width: 960px) {
   .partners__btn {
@@ -930,10 +932,42 @@ img {
     padding: 0;
   }
 }
+.footer .thanks {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 48px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: var(--color-main);
+  left: 0;
+  top: 0;
+  -webkit-animation: fade 0.3s ease;
+          animation: fade 0.3s ease;
+  z-index: 999;
+}
+@media (max-width: 1290px) {
+  .footer .thanks {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .footer .thanks {
+    font-size: 24px;
+  }
+}
+.footer .thanks.active {
+  display: flex;
+}
 .footer form {
   width: 100%;
   margin: 0;
   max-width: none;
+  position: relative;
 }
 @media (max-width: 960px) {
   .footer form {
@@ -1226,7 +1260,7 @@ img {
   flex-direction: column;
   gap: 30px;
 }
-.quiz__thanks {
+.quiz .thanks {
   display: none;
   position: absolute;
   width: 100%;
@@ -1245,16 +1279,16 @@ img {
   z-index: 999;
 }
 @media (max-width: 1290px) {
-  .quiz__thanks {
+  .quiz .thanks {
     font-size: 36px;
   }
 }
 @media (max-width: 600px) {
-  .quiz__thanks {
+  .quiz .thanks {
     font-size: 24px;
   }
 }
-.quiz__thanks.active {
+.quiz .thanks.active {
   display: flex;
 }
 
